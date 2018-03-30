@@ -1,0 +1,41 @@
+/* body {
+  color: white;
+  background: #181922;
+  font-family: Futura, "Trebuchet MS", sans-serif;
+  margin: 3em auto;
+  font-style: italic;
+  text-align: center;
+} */
+
+#lagger {
+  padding: 20px 10px;
+}
+
+#lag {
+  width: 260px;
+  vertical-align: text-bottom;
+}
+
+#val {
+  display: inline-block;
+  text-align: right;
+  width: 3em;
+}
+
+#asyncReactToolbox_div {
+  position: absolute;
+  z-index: 9;
+  background-color: #333;
+  border: 1px solid #3c3;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#asyncReactToolbox_divheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196f3;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
