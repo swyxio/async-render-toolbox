@@ -30,4 +30,6 @@ by [@dan_abramov](https://twitter.com/dan_abramov) and shared to the world with 
 
 ## references
 
+Check [https://github.com/sw-yx/fresh-async-react](https://github.com/sw-yx/fresh-async-react) for more awesome stuff.
+
 will put some sources here but now i have to go to dinner
