@@ -2,9 +2,8 @@
   "name": "async react toolbox",
   "short_name": "Async React",
   "version": "0.1",
-  "default_locale": "en",
   "description":
-    "Open source tools to debug your async react apps. Click on the icon to see the lag radar, Ctrl+R to show/hide. Source: https://github.com/sw-yx/async-react-toolbox",
+    "Open source tools to debug your async react apps. Click on the icon to see the lag radar, Ctrl+R to show/hide",
   "permissions": ["activeTab", "declarativeContent", "tabs", "http://*/*", "https://*/*"],
   "browser_action": {
     "default_title": "Async React Toolbox"

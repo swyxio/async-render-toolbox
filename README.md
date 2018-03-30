@@ -10,6 +10,8 @@ This is completely open source: https://github.com/sw-yx/async-react-toolbox I a
 
 ## Usage - chrome extension
 
+The extension is [here](https://chrome.google.com/webstore/detail/fbchcodfbfjeededacomngobhnndcgol) - waiting for it to show up on the Chrome store. Then:
+
 * install the extension.
 * click the little browser icon
 * you should see the radar appear
