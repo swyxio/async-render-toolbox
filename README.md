@@ -4,7 +4,7 @@
 
 This is an open source Chrome extension you can toggle on or off to see what's going on with your laggy-ass page. No affiliation with the React team. Currently this doesn't even require you to be a React user but in the future we plan to add more Reacty stuff, so yeah I'm calling it a "React" toolbox.
 
-![asyncreacttools](https://user-images.githubusercontent.com/6764957/38154988-249cb8ac-3443-11e8-84f3-de05022d79d3.gif)
+![asyncreacttools2](https://user-images.githubusercontent.com/35976578/38167844-5b222948-350b-11e8-859f-1d872bfb180a.gif)
 
 This is completely open source: https://github.com/sw-yx/async-react-toolbox I am still a nooby Chrome extension developer, please tell me if I am requesting too many permissions.
 
