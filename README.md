@@ -10,12 +10,12 @@ This is completely open source: https://github.com/sw-yx/async-react-toolbox I a
 
 ## Usage - chrome extension
 
-### Install on the Chrome extension [here](https://chrome.google.com/webstore/detail/fbchcodfbfjeededacomngobhnndcgol)
+### Install the Chrome extension [here](https://chrome.google.com/webstore/detail/fbchcodfbfjeededacomngobhnndcgol)
 
 Then:
 
-* Install the extension.
-* Click the little browser icon
+* Navigate to any site (eg linkedin.com)
+* Click the little browser icon to insert our javascript. Although we do request permissions, we never insert javascript on any site unless you click that button. (See our source code if you like, its open source)
 * You should see the radar appear
 * Now you can toggle it on or off using ctrl + R
 * If you refresh your page or navigate away you'll need to click the icon to reactivate again (we try not to inject ourselves into every page, that would be douchey)
