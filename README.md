@@ -24,6 +24,11 @@ The extension is [here](https://chrome.google.com/webstore/detail/fbchcodfbfjeed
 
 This is open source - and very rough right now. This repo doesn't ship with a demo but it could.
 
+Future features:
+
+- network request controls like Dan had with the Suspense demo. probably using [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) or [chrome extension intercept](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Intercept_HTTP_requests)
+- please open an issue if you have an idea you wanna work on/get help with!
+
 ## Genesis
 
 This uses LagRadar, authored by [@mobz](https://twitter.com/mobz) with ideas and contributions [from others](https://twitter.com/dan_abramov/status/970028229271670784)
