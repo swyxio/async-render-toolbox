@@ -28,6 +28,7 @@ This is open source - and very rough right now. This repo doesn't ship with a de
 
 Future features:
 
+- Firefox - compatibility: Issue here: https://github.com/sw-yx/async-react-toolbox/issues/6
 - network request controls like Dan had with the Suspense demo. probably using [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) or [chrome extension intercept](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Intercept_HTTP_requests)
 - please open an issue if you have an idea you wanna work on/get help with!
 
