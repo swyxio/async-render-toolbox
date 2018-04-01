@@ -15,5 +15,10 @@
   "options_page": "options.html",
   "homepage_url": "https://github.com/sw-yx/async-react-toolbox",
   "incognito": "spanning",
-  "manifest_version": 2
+  "manifest_version": 2,
+  "applications": {
+    "gecko": {
+      "id": "{c6988e4e-86ea-4866-ad75-700bddaefc66}"
+    }
+  }
 }
