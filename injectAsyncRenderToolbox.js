@@ -4,7 +4,7 @@ var asyncRenderToolbox = document.createElement("div");
 asyncRenderToolbox.id = "asyncRenderToolbox_div";
 var asyncRenderToolbox_header = document.createElement("div");
 asyncRenderToolbox_header.id = "asyncRenderToolbox_divheader";
-asyncRenderToolbox_header.textContent = "Async ⚛️ Toolbox";
+asyncRenderToolbox_header.textContent = "async-render-toolbox (ctrl+R to toggle)";
 asyncRenderToolbox.appendChild(asyncRenderToolbox_header);
 document.body.prepend(asyncRenderToolbox);
 dragElement(asyncRenderToolbox); // make it draggable
@@ -15,17 +15,21 @@ document.addEventListener("keyup", handleKeyUp, false);
 
 // handleKeyUp
 let asyncRenderToolboxActive = true;
+
+// we can use this programmatically in future
+function toggleToolbox() {
+  if (asyncRenderToolboxActive) {
+    asyncRenderToolbox.style.display = "none";
+  } else {
+    asyncRenderToolbox.style.display = "block";
+  }
+  asyncRenderToolboxActive = !asyncRenderToolboxActive;
+}
+
 function handleKeyUp(e) {
   // this would test for ctrl + R key
   if (e.ctrlKey && e.keyCode == 82) {
-    // call your function to do the thing
-    console.log("asyncRenderToolboxActive", asyncRenderToolboxActive);
-    if (asyncRenderToolboxActive) {
-      asyncRenderToolbox.style.display = "none";
-    } else {
-      asyncRenderToolbox.style.display = "block";
-    }
-    asyncRenderToolboxActive = !asyncRenderToolboxActive;
+    toggleToolbox();
   }
 }
 
