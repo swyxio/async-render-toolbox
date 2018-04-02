@@ -1,31 +1,31 @@
 // https://www.w3schools.com/howto/howto_js_draggable.asp
 
-var asyncReactToolbox = document.createElement("div");
-asyncReactToolbox.id = "asyncReactToolbox_div";
-var asyncReactToolbox_header = document.createElement("div");
-asyncReactToolbox_header.id = "asyncReactToolbox_divheader";
-asyncReactToolbox_header.textContent = "Async ⚛️ Toolbox";
-asyncReactToolbox.appendChild(asyncReactToolbox_header);
-document.body.prepend(asyncReactToolbox);
-dragElement(asyncReactToolbox); // make it draggable
-const destroy = lagRadar({ parent: document.getElementById("asyncReactToolbox_div") });
-asyncReactToolbox.style.top = document.documentElement.scrollTop + 30;
-asyncReactToolbox.style.left = Math.round(window.innerWidth / 2) - 30;
+var asyncRenderToolbox = document.createElement("div");
+asyncRenderToolbox.id = "asyncRenderToolbox_div";
+var asyncRenderToolbox_header = document.createElement("div");
+asyncRenderToolbox_header.id = "asyncRenderToolbox_divheader";
+asyncRenderToolbox_header.textContent = "Async ⚛️ Toolbox";
+asyncRenderToolbox.appendChild(asyncRenderToolbox_header);
+document.body.prepend(asyncRenderToolbox);
+dragElement(asyncRenderToolbox); // make it draggable
+const destroy = lagRadar({ parent: document.getElementById("asyncRenderToolbox_div") });
+asyncRenderToolbox.style.top = document.documentElement.scrollTop + 30;
+asyncRenderToolbox.style.left = Math.round(window.innerWidth / 2) - 30;
 document.addEventListener("keyup", handleKeyUp, false);
 
 // handleKeyUp
-let asyncReactToolboxActive = true;
+let asyncRenderToolboxActive = true;
 function handleKeyUp(e) {
   // this would test for ctrl + R key
   if (e.ctrlKey && e.keyCode == 82) {
     // call your function to do the thing
-    console.log("asyncReactToolboxActive", asyncReactToolboxActive);
-    if (asyncReactToolboxActive) {
-      asyncReactToolbox.style.display = "none";
+    console.log("asyncRenderToolboxActive", asyncRenderToolboxActive);
+    if (asyncRenderToolboxActive) {
+      asyncRenderToolbox.style.display = "none";
     } else {
-      asyncReactToolbox.style.display = "block";
+      asyncRenderToolbox.style.display = "block";
     }
-    asyncReactToolboxActive = !asyncReactToolboxActive;
+    asyncRenderToolboxActive = !asyncRenderToolboxActive;
   }
 }
 

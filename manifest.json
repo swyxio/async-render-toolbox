@@ -1,19 +1,19 @@
 {
-  "name": "async react toolbox",
-  "short_name": "Async React",
+  "name": "async render toolbox",
+  "short_name": "Async Render",
   "version": "0.1",
   "description":
-    "Open source tools to debug your async react apps. Click on the icon to see the lag radar, Ctrl+R to show/hide",
+    "Open source tools to debug your async render apps. Click on the icon to see the lag radar, Ctrl+R to show/hide",
   "permissions": ["activeTab", "declarativeContent", "tabs", "http://*/*", "https://*/*"],
   "browser_action": {
-    "default_title": "Async React Toolbox"
+    "default_title": "Async Render Toolbox"
   },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "options_page": "options.html",
-  "homepage_url": "https://github.com/sw-yx/async-react-toolbox",
+  "homepage_url": "https://github.com/sw-yx/async-render-toolbox",
   "incognito": "spanning",
   "manifest_version": 2
 }

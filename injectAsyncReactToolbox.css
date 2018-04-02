@@ -13,7 +13,7 @@
   width: 3em;
 }
 
-#asyncReactToolbox_div {
+#asyncRenderToolbox_div {
   position: fixed;
   z-index: 8675309;
   background-color: #333;
@@ -25,7 +25,7 @@
   box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.6);
 }
 
-#asyncReactToolbox_divheader {
+#asyncRenderToolbox_divheader {
   padding: 10px;
   cursor: move;
   z-index: 86753099;

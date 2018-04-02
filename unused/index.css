@@ -22,7 +22,7 @@
   width: 3em;
 }
 
-#asyncReactToolbox_div {
+#asyncRenderToolbox_div {
   position: absolute;
   z-index: 9;
   background-color: #333;
@@ -31,7 +31,7 @@
   border-radius: 10px;
 }
 
-#asyncReactToolbox_divheader {
+#asyncRenderToolbox_divheader {
   padding: 10px;
   cursor: move;
   z-index: 10;

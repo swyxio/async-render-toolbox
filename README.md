@@ -1,12 +1,12 @@
-# Async React Toolbox
+# Async Render Toolbox
 
-> Tools to help show off - or fix - your async-mode React apps
+> Tools to help show off - or fix - your async-mode Render apps
 
-This is an open source chrome extension you can toggle on or off to see whats going on with your laggy ass page. No affiliation with the React team. Currently this doesnt even require you to be a react user but in future we plan to add more reacty stuff so yeah i'm calling it a "react" toolbox.
+This is an open source chrome extension you can toggle on or off to see whats going on with your laggy ass page. No affiliation with the React team, but was inspired by their work.
 
 ![asyncreacttools](https://user-images.githubusercontent.com/6764957/38154988-249cb8ac-3443-11e8-84f3-de05022d79d3.gif)
 
-This is completely open source: https://github.com/sw-yx/async-react-toolbox I am still a nooby chrome extension developer, please tell me if I am requesting too many permissions.
+This is completely open source: https://github.com/sw-yx/async-render-toolbox I am still a nooby chrome extension developer, please tell me if I am requesting too many permissions.
 
 ## Usage - chrome extension
 
@@ -33,5 +33,3 @@ by [@dan_abramov](https://twitter.com/dan_abramov) and shared to the world with 
 ## references
 
 Check [https://github.com/sw-yx/fresh-async-react](https://github.com/sw-yx/fresh-async-react) for more awesome stuff.
-
-will put some sources here but now i have to go to dinner
