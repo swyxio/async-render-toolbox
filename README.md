@@ -4,25 +4,33 @@
 
 This is an open source chrome extension you can toggle on or off to see whats going on with your laggy ass page. No affiliation with the React team, but was inspired by their work.
 
-![asyncreacttools](https://user-images.githubusercontent.com/6764957/38154988-249cb8ac-3443-11e8-84f3-de05022d79d3.gif)
+![asyncreacttools2](https://user-images.githubusercontent.com/35976578/38167844-5b222948-350b-11e8-859f-1d872bfb180a.gif)
 
 This is completely open source: https://github.com/sw-yx/async-render-toolbox I am still a nooby chrome extension developer, please tell me if I am requesting too many permissions.
 
 ## Usage - chrome extension
 
-The extension is [here](https://chrome.google.com/webstore/detail/fbchcodfbfjeededacomngobhnndcgol) - waiting for it to show up on the Chrome store. Then:
+### Install the Chrome extension [here](https://chrome.google.com/webstore/detail/fbchcodfbfjeededacomngobhnndcgol)
 
-* install the extension.
-* click the little browser icon
-* you should see the radar appear
-* now you can toggle it on or off using ctrl + R
-* if you refresh your page or navigate away you'll need to click the icon to reactivate again (we try not to inject ourselves into every page, that would be douchey)
-* also try dragging the box around
-* enjoy tuning up your apps!
+Then:
+
+* Navigate to any site (eg linkedin.com)
+* Click the little browser icon to insert our javascript. Although we do request permissions, we never insert javascript on any site unless you click that button. (See our source code if you like, its open source)
+* You should see the radar appear
+* Now you can toggle it on or off using ctrl + R
+* If you refresh your page or navigate away you'll need to click the icon to reactivate again (we try not to inject ourselves into every page, that would be douchey)
+* Also try dragging the box around
+* Enjoy tuning up your apps!
 
 ## Development
 
-this is open source - and very rough right now. this repo doesnt ship with a demo but it could.
+This is open source - and very rough right now. This repo doesn't ship with a demo but it could.
+
+Future features:
+
+* Firefox - compatibility: Issue here: https://github.com/sw-yx/async-react-toolbox/issues/6
+* network request controls like Dan had with the Suspense demo. probably using [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) or [chrome extension intercept](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Intercept_HTTP_requests)
+* please open an issue if you have an idea you wanna work on/get help with!
 
 ## Genesis
 
