@@ -12,7 +12,9 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html"
+  },
   "homepage_url": "https://github.com/sw-yx/async-render-toolbox",
   "incognito": "spanning",
   "manifest_version": 2
