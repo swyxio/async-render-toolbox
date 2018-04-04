@@ -19,7 +19,7 @@ Then:
 * Navigate to any site (eg linkedin.com)
 * Click the little browser icon to insert our javascript. Although we do request permissions, we never insert javascript on any site unless you click that button. (See our source code if you like, its open source)
 * You should see the radar appear
-* Now you can toggle it on or off using ctrl + R
+* Now you can toggle it on or off using option + R (alt + R on windows)
 * If you refresh your page or navigate away you'll need to click the icon to reactivate again (we try not to inject ourselves into every page, that would be douchey)
 * Also try dragging the box around
 * Enjoy tuning up your apps!

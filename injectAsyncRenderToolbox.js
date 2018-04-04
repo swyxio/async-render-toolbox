@@ -4,7 +4,7 @@ var asyncRenderToolbox = document.createElement("div");
 asyncRenderToolbox.id = "asyncRenderToolbox_div";
 var asyncRenderToolbox_header = document.createElement("div");
 asyncRenderToolbox_header.id = "asyncRenderToolbox_divheader";
-asyncRenderToolbox_header.textContent = "async-render-toolbox (ctrl+R to toggle)";
+asyncRenderToolbox_header.textContent = "async-render-toolbox (alt+R to toggle)";
 asyncRenderToolbox.appendChild(asyncRenderToolbox_header);
 document.body.prepend(asyncRenderToolbox);
 dragElement(asyncRenderToolbox); // make it draggable
@@ -27,8 +27,8 @@ function toggleToolbox() {
 }
 
 function handleKeyUp(e) {
-  // this would test for ctrl + R key
-  if (e.ctrlKey && e.keyCode == 82) {
+  // this would test for alt + R key
+  if (e.altKey && e.keyCode == 82) {
     toggleToolbox();
   }
 }
