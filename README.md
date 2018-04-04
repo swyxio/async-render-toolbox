@@ -12,7 +12,7 @@ This is completely open source: https://github.com/sw-yx/async-render-toolbox I 
 
 ### Install the Chrome extension [here](https://chrome.google.com/webstore/detail/fbchcodfbfjeededacomngobhnndcgol)
 
-### Install the Firefox extension [here](https://addons.mozilla.org/en-US/developers/addon/async-render-toolbox/)
+### Install the Firefox extension [here](https://addons.mozilla.org/en-US/firefox/addon/async-render-toolbox/)
 
 Then:
 
