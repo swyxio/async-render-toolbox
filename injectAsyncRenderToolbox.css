@@ -16,7 +16,7 @@
 #asyncRenderToolbox_div {
   position: fixed;
   z-index: 8675309;
-  background-color: #333;
+  background-color: rgba(102, 102, 102, 0.6);
   border: 1px solid #3c3;
   text-align: center;
   border-radius: 10px;
@@ -29,7 +29,7 @@
   padding: 10px;
   cursor: move;
   z-index: 86753099;
-  background-color: #2196f3;
+  background: linear-gradient(to right, #3f5efb, #fc466b); /*#2196f3;*/
   color: #fff;
   border-radius: 10px 10px 0px 0px;
 }
