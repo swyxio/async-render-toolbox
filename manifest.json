@@ -1,7 +1,7 @@
 {
   "name": "async render toolbox",
   "short_name": "Async Render",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description":
     "Open source tools to debug your async render apps. Click on the icon to see the lag radar, ⌥+R to show/hide",
   "permissions": ["activeTab", "declarativeContent", "tabs", "http://*/*", "https://*/*"],
