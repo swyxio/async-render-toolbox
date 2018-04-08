@@ -8,11 +8,77 @@ asyncRenderToolbox_header.textContent = "async-render-toolbox (alt/⌥+R to togg
 asyncRenderToolbox.appendChild(asyncRenderToolbox_header);
 document.body.prepend(asyncRenderToolbox);
 dragElement(asyncRenderToolbox); // make it draggable
-const destroy = lagRadar({ parent: document.getElementById("asyncRenderToolbox_div") });
+// const destroy = lagRadar({ parent: document.getElementById("asyncRenderToolbox_div") });
+lagRadar({ parent: document.getElementById("asyncRenderToolbox_div") });
 asyncRenderToolbox.style.top = document.documentElement.scrollTop + 30;
 asyncRenderToolbox.style.left = Math.round(window.innerWidth / 2) - 30;
 document.addEventListener("keyup", handleKeyUp, false);
 
+// ********************************************************
+// monkey patch XmlHTTPRequest to listen to every send
+// https://gist.github.com/suprememoocow/2823600
+// http://qnimate.com/monitoring-ajax-requests/
+// (function(XHR) {
+//   "use strict";
+//   XHR.prototype.realSend = XHR.prototype.send;
+//   XHR.prototype.send = function(value) {
+//     console.log("xhr send detected!", value);
+//     this.addEventListener(
+//       "progress",
+//       function(e) {
+//         console.log("Loading", e);
+//       },
+//       false
+//     );
+//     this.realSend(value);
+//   };
+// })(XMLHttpRequest);
+
+// console.log("***start******", XMLHttpRequest.prototype.send);
+
+// XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.send;
+// XMLHttpRequest.prototype.send = function(value) {
+//   this.addEventListener(
+//     "loadstart",
+//     function() {
+//       console.log("Loading");
+//     },
+//     false
+//   );
+//   console.log("********************");
+//   this.realSend(value);
+// };
+
+// console.log("***end******", XMLHttpRequest.prototype.send);
+
+// // nope
+// document.body.addEventListener("load", function(doc, ev) {
+//   console.log("loading doc", doc);
+//   console.log("loading ev", ev);
+// });
+// document.body.addEventListener("readystatechange", function(doc, ev) {
+//   console.log("loading doc", doc);
+//   console.log("loading ev", ev);
+// });
+
+var el = document.createElement("script");
+el.innerHTML = `
+XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.send;
+XMLHttpRequest.prototype.send = function(value) {
+  this.addEventListener(
+    "loadstart",
+    function() {
+      console.log("Loading");
+    },
+    false
+  );
+  console.log("********************");
+  this.realSend(value);
+};
+`;
+document.body.appendChild(el);
+
+// ********************************************************
 // handleKeyUp
 let asyncRenderToolboxActive = true;
 
