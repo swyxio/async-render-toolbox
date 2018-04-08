@@ -8,6 +8,9 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   chrome.tabs.insertCSS({
     file: "injectAsyncRenderToolbox.css"
   });
+  // chrome.tabs.executeScript({
+  //   file: "static/js/main.js" // inject our react app
+  // });
   // chrome.storage.local.get(["injectAsyncRenderToolbox"], function(result) {
   //   // i cant figure out how to kill after injecting so leaving this commented out for now
   //   // resources used

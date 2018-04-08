@@ -1,16 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import App from './App';
+import App from "./App";
 // import registerServiceWorker from './registerServiceWorker';
-
-function Button(props) {
-  return <button onClick={() => console.log("hihihih")}> slkdjl </button>;
-}
 
 // https://medium.com/@yosevu/how-to-inject-a-react-app-into-a-chrome-extension-as-a-content-script-3a038f611067
 
-const viewport = document.getElementById("viewport");
+const viewport = document.getElementById("asyncRenderToolbox_div");
 
 // Create a div to render the App component to.
 const app = document.createElement("div");
@@ -24,5 +20,5 @@ app.id = "root";
 // You could also use `appendChild` depending on your needs.
 if (viewport) viewport.prepend(app);
 
-ReactDOM.render(<Button />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 // registerServiceWorker();

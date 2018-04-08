@@ -14,6 +14,13 @@ asyncRenderToolbox.style.top = document.documentElement.scrollTop + 30;
 asyncRenderToolbox.style.left = Math.round(window.innerWidth / 2) - 30;
 document.addEventListener("keyup", handleKeyUp, false);
 
+// https://stackoverflow.com/questions/26183649/correct-simplest-way-of-calling-one-js-file-inside-another-js?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+const s = document.createElement("script");
+s.type = "text/javascript";
+s.async = true;
+s.src = "static/js/main.js";
+document.body.appendChild(s);
+
 // ********************************************************
 // monkey patch XmlHTTPRequest to listen to every send
 // https://gist.github.com/suprememoocow/2823600
@@ -61,22 +68,25 @@ document.addEventListener("keyup", handleKeyUp, false);
 //   console.log("loading ev", ev);
 // });
 
-var el = document.createElement("script");
-el.innerHTML = `
-XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.send;
-XMLHttpRequest.prototype.send = function(value) {
-  this.addEventListener(
-    "loadstart",
-    function() {
-      console.log("Loading");
-    },
-    false
-  );
-  console.log("********************");
-  this.realSend(value);
-};
-`;
-document.body.appendChild(el);
+// // this is a working monkeypatch thing
+// var el = document.createElement("script");
+// el.innerHTML = `
+// XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.send;
+// XMLHttpRequest.prototype.send = function(value) {
+//   this.addEventListener(
+//     "loadstart",
+//     function() {
+//       console.log("Loading");
+//     },
+//     false
+//   );
+//   console.log("********************");
+//   this.realSend(value);
+// };
+// `;
+// document.body.appendChild(el);
+
+// require("./static/js/main"); // should add a little button
 
 // ********************************************************
 // handleKeyUp

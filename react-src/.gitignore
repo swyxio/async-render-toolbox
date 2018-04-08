@@ -7,7 +7,7 @@
 /coverage
 
 # production
-# /build # we want to ship builds.
+/build
 
 # misc
 .DS_Store
