@@ -25,6 +25,13 @@
   box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.6);
 }
 
+#asyncRenderToolbox_tabs {
+  display: flex
+}
+#asyncRenderToolbox_tabs button {
+  flex: 1
+}
+
 #asyncRenderToolbox_divheader {
   padding: 10px;
   cursor: move;
