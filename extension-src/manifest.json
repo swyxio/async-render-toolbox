@@ -2,19 +2,27 @@
   "name": "async render toolbox",
   "short_name": "Async Render",
   "version": "0.2.2",
-  "description":
-    "Open source tools to debug your async render apps. Click on the icon to inject the javascript and see the lag radar, ⌥+R to show/hide. We do not inject any javascript on any page until you click that button. As a fully open source project we are committed to leaving you in full control.",
-  "permissions": ["activeTab", "declarativeContent", "tabs", "http://*/*", "https://*/*"],
+  "description": "Open source tools to debug your async render apps. Click on the icon to inject the javascript and see the lag radar, ⌥+R to show/hide. We do not inject any javascript on any page until you click that button. As a fully open source project we are committed to leaving you in full control.",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
   "browser_action": {
     "default_title": "Async Render Toolbox"
   },
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
   "options_ui": {
     "page": "options.html"
   },
+  "content_security_policy": "script-src 'self' 'sha256-oBcgzoAu2ieRbBDMJ9vpWZrbL7zbeMK92PZu5VXQKU0='; object-src 'self'",
   "homepage_url": "https://github.com/sw-yx/async-render-toolbox",
   "incognito": "spanning",
   "manifest_version": 2
